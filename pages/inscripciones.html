@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modalidades - Torneo Gran Turismo 4</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="icon" href="../images/favicon.svg" type="image/svg+xml" />
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <a href="https://torneos.ignaciofianza.com"
+          ><img src="../images/gtlogo.png" alt="GT4 Logo"
+        /></a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="https://torneos.ignaciofianza.com">Inicio</a></li>
+          <li><a href="../pages/modalidades.html">Modalidades</a></li>
+          <li><a href="../pages/reglas.html">Reglas</a></li>
+          <li><a href="../pages/formato.html">Formato</a></li>
+          <li><a href="../pages/inscripciones.html">Inscripciones</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="form-section">
+      <h2>Inscripciones - Torneo Gran Turismo 4</h2>
+      <p>¡Rellena este formulario para inscribirte en el torneo!</p>
+      <form
+        action="https://docs.google.com/forms/d/e/1FAIpQLSdKAzfdUPIMjAKpg6O0SIaWh2Tl2FHwgs-75FZ1ec6iTQw0Sw/formResponse"
+        method="POST"
+      >
+        <div class="form-group">
+          <label for="name">Nombre y Apellido del participante:</label>
+          <input
+            type="text"
+            id="name"
+            name="entry.1557407230"
+            required
+            autocomplete="name"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="mode">Modo de participación:</label>
+          <input
+            type="text"
+            id="mode"
+            name="entry.518180924"
+            required
+            autocomplete="off"
+            list="modes"
+          />
+          <datalist id="modes">
+            <option value="Individual"></option>
+            <option value="Equipos"></option>
+            <option value="Ambas"></option>
+          </datalist>
+        </div>
+
+        <div class="form-group">
+          <label for="team-name">Nombre del equipo (Si aplica):</label>
+          <input
+            type="text"
+            id="team-name"
+            name="entry.703829789"
+            autocomplete="off"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="team-members">Integrantes del equipo (Si aplica):</label>
+          <input
+            type="text"
+            id="team-members"
+            name="entry.1466888889"
+            autocomplete="off"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Correo:</label>
+          <input
+            type="email"
+            id="email"
+            name="entry.1830877860"
+            required
+            autocomplete="email"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="comments">Comentarios adicionales:</label>
+          <textarea id="comments" name="entry.103453936" rows="4"></textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="submit">Enviar Inscripción</button>
+        </div>
+      </form>
+    </section>
+
+    <footer>
+      <p>&copy; 2024 Ignacio Fianza.</p>
+    </footer>
+  </body>
+</html>
